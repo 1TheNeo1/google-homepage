@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google's Homepage</title>
+    <style>
+    .parent {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .logo {
+        display: flex;
+        margin-bottom: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    #search-box{
+        margin-bottom: 2rem;
+        border-radius: 25px;
+        border: 1px solid rgba(187, 183, 189, 0.4);
+        padding: 20px; 
+        width: 30rem;
+        height: 18px;  
+    }
+    #search-box:hover{
+        -webkit-box-shadow: 0px 0px 5px 3px rgba(199,199,199, 0.6);
+        -moz-box-shadow: 0px 0px 5px 3px rgba(199,199,199, 0.6);
+        box-shadow: 0px 0px 5px 3px rgba(199,199,199, 0.6);
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn{
+        height: 36px;
+        line-height: 27px;
+        width: 30%;
+        border: none;
+        background: rgba(224, 224, 224, 0.6);
+    }
+    .btn:hover{
+        border: 1px solid rgba(187, 183, 189, 0.4);
+        cursor: pointer;
+    }
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: arial,sans-serif;
+        font-size: 13px;
+    }
+    .navbar li {
+        float: right;
+    }
+    .navbar li a {
+        display: block;
+        color:black;
+        text-align: center;
+        padding: 14px 10px;
+        text-decoration: none;
+    }
+    .navbar li a:hover{
+        text-decoration: underline;
+    }
+    .fbar {
+        display: flex;
+        border: 1px solid rgba(187, 183, 189, 0.4);
+        background-color: #f2f2f2;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    .fbar li:nth-child(5),
+    .fbar li:nth-child(6),
+    .fbar li:nth-child(7){
+        float:right;
+        position: relative;
+        
+    }
+    
+    .fbar li {
+        float: left;
+    }
+    .fbar li a {
+        display: block;
+        color: rgb(78, 76, 76);
+        margin-bottom: 0;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .fbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        font-family: arial,sans-serif;
+        font-size: 13px;
+    }
+    .fbar li a:hover{
+        text-decoration: underline;
+    }
+    .rigth-f{
+        margin-right: 60px;
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li> <a href="#" style="color: gray; font-size: 2.2rem;margin: 0; padding-top: 0;" target="_blank" rel="noopener noreferrer"><i class="fas fa-user-circle"></i></a></li>
+            <li> <a href="#" style="color: gray; font-size: 1.4rem;margin: 0; padding-top: 8px;" target="_blank" rel="noopener noreferrer"><i class="fas fa-th"></i></a></li>
+            <li> <a href="#" target="_blank" rel="noopener noreferrer">Images</a> </li>
+            <li> <a href="#" target="_blank" rel="noopener noreferrer">Gmail</a></li>
+        </ul>
+    </div>
+    <main class="parent">
+        <div class="search-section">
+    <div class="logo">
+        <img height="92" width="272" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    </div>
+    <div class="search">
+        <form action=""><input type="search" name="search" id="search-box"></form>
+    </div>
+    <div class="buttons">
+        <button class="btn" style="margin-right: 10%">Google Search</button>
+        <button class="btn" style="margin-left: 10%">I'm Felling Lucky</button>
+    </div>
+</div>
+</main>
+<div class="fbar">
+    <ul>
+        <li> <a href="#" target="_blank" rel="noopener noreferrer">Advertising</a></li>
+        <li> <a href="#" target="_blank" rel="noopener noreferrer">Business</a></li>
+        <li> <a href="#" target="_blank" rel="noopener noreferrer">About</a> </li>
+        <li> <a href="#" target="_blank" rel="noopener noreferrer">How Search Works</a></li>
+        <span class="right-f">
+        <li> <a href="#" style="padding-left:120vh" target="_blank" rel="noopener noreferrer">Settings</a></li>
+        <li> <a href="#" target="_blank" rel="noopener noreferrer">Terms</a></li>
+        <li> <a href="#" target="_blank" rel="noopener noreferrer">Privacy</a></li>
+        </span>
+    </ul>
+</div>
+<script src="https://kit.fontawesome.com/8d4c5655e7.js"></script>
+</body>
+</html>
